@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Proyecto Personal// Gonzalo Carrasco</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary px-5 sticky-top">
+            <a class="navbar-brand text-warning font-weight-bold" href="javascript:void(0)">FONDEVE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Proyecto</a>
+                    </li>
+                    
+                        <div class="dropdown-menu navbar-dark bg-primary" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">crear cuenta</a>
+                            <a class="dropdown-item" href="#">asesoria técnica</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Write Your Feedback</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal" >acceder</button>
+                    <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal" >registrate</button>
+                </div>
+            </div>
+        </nav>
+        <!-- login modal  -->     <!-- Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">vecin@ acceda a su cuenta</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Email </label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                             
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="form-group form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div>
+                            <button type="submit" class="btn btn-primary">ingresar</button>
+                          </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- signup modal  -->
+       
+        <!-- Modal -->
+        <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Bienvenidos </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Email </label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="form-group">
+                                <label for="cexampleInputPassword1">Confirmar Password</label>
+                                <input type="password" class="form-control" id="cexampleInputPassword1">
+                              </div>
+                            <button type="submit" class="btn btn-primary">Crear cuenta</button>
+                          </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- service section start  -->
+        <div class="container my-4">
+            <div class="row featurette d-flex justify-content-center align-items-center">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">QUE ES FONDEVE? <span class="text-muted"></span></h2>
+                    <p class="lead"> El Fondo de Desarrollo Vecinal (FONDEVE), creado por Ley N° 19.418 sobre Juntas de Vecinos y demás Organizaciones Comunitarias, tiene por objetivo apoyar proyectos de desarrollo comunitario presentados por las Juntas de Vecinos o por la Unión Comunal de Juntas de Vecinos (en adelante Organizaciones Postulantes), destinados a la solución de problemas que afectan directamente a los vecinos, y que constituyan un aporte significativo al desarrollo de la comuna y de sus habitantes.</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                        src="img/about1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="row featurette d-flex justify-content-center align-items-center">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">¿Qué tipos de proyectos se postulan?
+                        <span class="text-muted"></span></h2>
+                    <p class="lead">En este llamado a postulación FONDEVE 2021 se priorizarán los criterios de seguridad, habitabilidad y accesibilidad universal, y por ello se establecerán 2 líneas de proyectos que aborden la seguridad estructural de las construcciones, que garanticen la seguridad en el transporte vertical de residentes, que incorporen sistemas de detección y o contención de incendios, que mejoren las redes de instalaciones y que mejoren techumbres y sistemas de evacuación de aguas lluvias.
+                        .</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                        src="img/about2.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="row featurette d-flex justify-content-center align-items-center">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">QUIEN PUEDE POSTULAR. <span class="text-muted"></span></h2>
+                    <p class="lead">Residentes de nuestra comuna podrán participar y postular sus proyectos de seguridad, habitabilidad y accesibilidad universal.
+
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                        src="img/about3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="container">
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <p>UPS 2020-2021 uProvider&copy;, Inc.&trade; <a href="#">privacy</a>. <a href="#">Terms</a></p>
+        </footer>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
